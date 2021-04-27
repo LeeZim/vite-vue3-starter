@@ -1,7 +1,7 @@
 <template>
   <ul v-for="(item, index) in titleList[aid]" :key="index">
     <li>
-      <router-link :to="{ name: item.router }">{{ item.title }}</router-link>
+      <router-link :to="{ name: item.router, query: { aid: 's30' } }">{{ item.title }}</router-link>
     </li>
   </ul>
 </template>
